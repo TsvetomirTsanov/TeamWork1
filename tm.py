@@ -1,8 +1,9 @@
 class Spell:
-    def __init__(self,name, damage, required_mana):
+    def __init__(self,name, damage, mana_cost, cast_range):
         self.damage = damage
         self.name = name
-        self.required_mana = required_mana
+        self.mana_cost = mana_cost
+        self.cast_range = cast_range
 
 class Weapon:
     def __init__(self,name, damage):
@@ -78,6 +79,42 @@ class Hero:
             return self.weapon.damage
         else:
             return 0
+
+
+class Dungeon:
+    def __init__(self, file_name):
+        pass
+
+#print file content
+    def print_map():
+        pass
+
+#search from left to right the first occ of S and change it with H(inst of Hero)
+#return False if no spawn points
+#return True if spawning is successful
+#game over if no spawn points
+    def spawn():
+        pass
+
+#return True or False if he can move in this direction
+#if go in enemy start Fight
+#if go on treasure roll a dice: potion, weapon or spell
+    def move_hero(self, direction):
+        pass
+
+#give random item, returns insta of it
+    def pick_treasure():
+        pass
+
+#check if he can attack by spell or weapon
+    def hero_attack(by=""):
+        pass
+
+
+class Fight:
+    pass
+
+
 
 w = Weapon("sabq", 10)
 s = Spell("sab",25, 20)
